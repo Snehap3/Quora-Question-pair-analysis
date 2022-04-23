@@ -7,3 +7,13 @@ tfidf
 xgboost==1.5.2
 lightgbm==3.3.2
 deep-translator==1.8.3
+numpy 
+scipy
+pandas 
+os
+gc
+seaborn
+Counter
+re
+string
+nltk
