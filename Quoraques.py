@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # %matplotlib inline
 
-import Distance
+#import Distance
 
 df_train = pd.read_csv('C:\\Users\\670259990\\Downloads\\train.csv')
 df_train.head()
