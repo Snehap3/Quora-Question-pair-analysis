@@ -1,0 +1,14 @@
+# write the file
+$ pip freeze > requirements.txt
+
+# show the file's contents
+$ cat requirements.txt
+
+Distance==0.1.3
+matplotlib==3.3.4
+plotly==5.6.0
+sklearn=1.0.2
+tfidf
+xgboost==1.5.2
+lightgbm==3.3.2
+deep-translator==1.8.3
