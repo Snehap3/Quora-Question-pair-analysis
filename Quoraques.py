@@ -407,16 +407,3 @@ xgb_prediction = xgb_model.predict(X_valid)
 print('character level tf-idf training score:', f1_score(y_train, xgb_model.predict(X_train), average='macro'))
 print('character level tf-idf validation score:', f1_score(y_valid, xgb_model.predict(X_valid), average='macro'))
 print(classification_report(y_valid, xgb_prediction))
-
-X
-
-SMOTE
-data cleaning
-improve labelling
-hyperparameter tuning- optuna...best parameters
-log loss score
-discussion:
-    
-1. cosine similarity
-2. Jaccard Index
-
