@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 # %matplotlib inline
 
-!pip install Distance
+import Distance
 
 df_train = pd.read_csv('C:\\Users\\670259990\\Downloads\\train.csv')
 df_train.head()
@@ -110,7 +110,7 @@ print(sorted(weights.items(), key=lambda x: x[1] if x[1] > 0 else 9999)[:10])
 print('\nLeast common words and weights: ')
 (sorted(weights.items(), key=lambda x: x[1], reverse=True)[:10])
 
-!pip install plotly
+#!pip install plotly
 
 import plotly.express as px
 
@@ -156,11 +156,11 @@ print ("Number of duplicate questions",(pair_duplicates).shape[0] - df_train.sha
 nan_rows = df_train[df_train.isnull().any(1)]
 print (nan_rows)
 
-!pip install tfidf
+#!pip install tfidf
 
-!pip install -U scikit-learn
+#!pip install -U scikit-learn
 
-!pip install sklearn
+import sklearn
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -183,7 +183,7 @@ from sklearn.model_selection import train_test_split
 y = labels
 X_train,X_valid,y_train,y_valid = train_test_split(X,y, test_size = 0.33, random_state = 42)
 
-!pip install xgboost
+#!pip install xgboost
 
 import xgboost as xgb
 
@@ -203,7 +203,7 @@ print(classification_report(y_valid, xgb_prediction))
 print('word level tf-idf training score:', log_loss(y_train, xgb_model.predict(X_train)))
 print('word level tf-idf validation score:', log_loss(y_valid, xgb_model.predict(X_valid)))
 
-!pip install lightgbm
+#!pip install lightgbm
 
 import lightgbm as lgb
 
