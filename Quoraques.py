@@ -8,6 +8,7 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
+import streamlit as st
 import numpy as np 
 import pandas as pd 
 import os
